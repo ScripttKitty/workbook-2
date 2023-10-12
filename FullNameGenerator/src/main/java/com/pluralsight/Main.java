@@ -5,6 +5,7 @@
 
 import java.util.Scanner;
 
+
 package com.pluralsight;
 public class Main {
     public static void main(String[] args) {
@@ -28,9 +29,13 @@ public class Main {
 
         System.out.println(first + middle + last + title);
 
+     //  first = first.replace( first.charAt(0), Character.toUpperCase(first.charAt(0)));
+
         if (middle.length() == 1 ) middle = middle + ".";
 
-        if (! title.isEmpty() ) title = ", " +title;
+        if (! title.isBlank() ) title = ", " +title;
+        title = title.toUpperCase();
+
 
         System.out.println(first + " " + middle + " " + last + title);
 
