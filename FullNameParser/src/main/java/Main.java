@@ -23,16 +23,37 @@ public class Main {
 
         //Assigning the variables with substring using the index stored for the spaces
         firstName = fullName.substring(0, firstSpace);
-
         middleName = fullName.substring(firstSpace, secondSpace);
         lastName = fullName.substring(secondSpace);
 
         //Output display showing the different parts of the user's name
         System.out.println("First name: " + firstName);
-        System.out.println("Middle name: " +middleName);
+        System.out.println("Middle name: " + middleName);
        System.out.println("Last name; "+ lastName);
 
 
+
     }
+    /*
+    public boolean middleNameConfirm(String fullName) {
+        int secondSpace;
+        String firstSpace = fullName.substring(" ");
+
+        if (secondSpace = fullName.indexOf(" ", firstSpace + 1)) {
+            return true;
+        } else {
+           return false;
+                   //System.out.println("none");
+
+
+            if (fullName.middleNameConfirm() = false){
+                System.out.println("none");
+
+     */
+        }
+
+
+
+
 
 }
